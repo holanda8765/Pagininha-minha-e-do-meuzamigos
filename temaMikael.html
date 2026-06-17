@@ -1,0 +1,88 @@
+<!-- Mikael Jatobá - ATV04 - Turma 523 -->
+<!-- Tema -->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<style>
+
+/* classe que define como a div mestre irá se comportar */
+.mestre{
+    width: 90%; /* a div principal vai ocupar 90% da largura da página */
+    margin-left: auto; /* a distância da esquerda da página até a tabela vai ser definida automaticamente conforme o zoom*/
+    margin-right: auto; /* a distância da direita da página até a tabela vai ser definida automaticamente conforme o zoom */
+    background-color:rgb(27, 27, 27); /* define a cor de fundo da div principal */
+    border: 2px solid black; /* adiciona uma borda solida de cor preta e 2px de grossura*/
+}
+
+/* definirá como as divs dentro da div mestre irão se comportar */
+.subord{
+    width: 100%; /* as divs dentro da div mestre vão ocupar 100% da largura dela */
+    background-color: rgb(44, 44, 44); /* define a cor de fundo da div principal */
+    border: 1px solid black ; /* adiciona uma borda solida de cor preta e 1px de grossura*/
+}
+
+/* Classe que transformará as imagens em imagens redondas*/
+.imgredonda {
+    display: block; /* a imagem vai se adaptar ao zoom da página */
+    margin-left: auto; /* a margem à esquerda vai se ajustar automaticamente */ 
+    margin-right: auto; /* a margem à direita vai se ajustar automaticamente */
+    border-radius: 50%; /* borda de 50% (metade redonda + metade redonda = círculo) */
+    width: 200px; /* largura da imagem será de 200px*/
+    height: 200px; /* altura da imagem será de 200px*/
+    object-fit: cover;/* não deixa a imagem ficar má formatada (esticada por exemplo)*/
+}
+
+/*classe pra definir a cor de fundo do body*/
+.corpo{
+    background-color:rgb(31, 30, 30); /* define a tela de fundo */
+}
+
+/* classe criada para definir padrões gerais de textos*/
+.padraotxt {
+    text-align: center; /* os textos serão alinhados ao centro */    
+    color: white; /* define a cor dos textos */
+}
+
+/* classe criada para definir como o link da loja irá se comportar*/
+.linkloja{
+    font-size:20px; /*o texto terá 20px de tamanho*/
+    text-align: center; /* os títulos (h1, h2 e h3) e os parágrafos serão alinhados ao centro */    
+    color: white; /*define a cor desse texto*/
+}
+
+</style>
+
+<body class="corpo">
+        <h1 class="padraotxt"> 30PraUm</h1>
+        <img class="imgredonda" src="./img/ft30.jpg" alt="Logo maneirrísima da 30PraUm" title="Logo da 30" >
+        <p class="linkloja"> <a class="padraotxt" href="https://30praum.store/?srsltid=AfmBOoroq42m4CeNLBRlnq4B3ql0SW9LcfUz74ElX_oCwORa__8Erspi" target="_blank"> Loja da 30!</a> </p>
+        <div class="mestre">
+            <h1 class="padraotxt"> Componentes:</h1>
+            <div class="subord"> 
+                <h2 class="padraotxt">Matuê (Matheus Aguiar)</h2> <img class="imgredonda" src="./img/matue.jpg" alt="foto maneirrísima do tuêzin" title="Foto do tuê original" >
+                <p class="padraotxt">Diretor Criativo, <strong> fundador </strong> e rapper principal</p>
+            </div> 
+            <div class="subord">
+                 <h2 class="padraotxt">Teto (Clériton Sávio Santos Silva)</h2><img class="imgredonda" src="./img/teto.jpg" alt="foto maneirrísima do tetin"  title="Foto do tt original" >
+                 <p class="padraotxt">Rapper, conhecido como <strong> "rei das prévias" </strong></p> 
+            </div>
+            <div class="subord">
+                <h2 class="padraotxt">WIU (Vinicius William Sales de Lima)</h2> <img class="imgredonda" src="./img/wiu.jpg" alt="foto maneirrísima do tio wiu" title="Foto do WIU"  >
+                <p class="padraotxt">Rapper e produtor musical</p>
+            </div>    
+            <div class="subord">
+                 <h2 class="padraotxt">Brandão85 (Gabriel Brandão da Costa) </h2> <img class="imgredonda" src="./img/brandao.jpg" alt="foto maneirrísima do big brando"  title="Foto do Real Trapper" >
+                 <p class="padraotxt">Rapper e produtor musical, <strong> anunciado em 2024 </strong></p>
+            </div>
+            <div class="subord"> 
+                <h2 class="padraotxt">Clara Mendes</h2> <img class="imgredonda" src="./img/clara.jpg" alt="foto maneirrísima da clara" title="Foto da Clara">
+                <p class="padraotxt">Cofundadora e <strong> CEO da 30PRAUM </strong></p>
+            </div>           
+        </div>
+</body>

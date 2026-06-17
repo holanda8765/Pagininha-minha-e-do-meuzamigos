@@ -1,0 +1,129 @@
+<!-- Mikael Jatobá - ATV04 - Turma 523 -->
+<!-- Currículo-->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<style>
+
+/* classe da Div principal que conterá as informações do currículo*/
+.informacoes {
+    width: 90%; /* a div principal vai ocupar 90% da largura da página */
+    margin-left: auto; /* a distância da esquerda da página até a tabela vai ser definida automaticamente conforme o zoom*/
+    margin-right: auto; /* a distância da direita da página até a tabela vai ser definida automaticamente conforme o zoom */
+    border: 2px solid black; /* adiciona uma borda solida de cor preta e 2px de grossura*/
+}
+
+/*classe de div que vai conter as 3 primeiras informações*/
+.firstinform {
+    width: 100%; /* a div contendo as primeiras informações vai ocupar 100% da largura da div principal */
+    display: flex; /* organiza automaticamente os elementos */
+}
+
+/*classe de div que vai conter as 3 últimas informações */
+.secondinform {
+    width: 100%; /* a div contendo as informações secundárias vai ocupar 100% da largura da div principal */
+    display: flex; /* organiza automaticamente os elementos */ 
+}
+
+/* classe que indica como as divs presentes nas divs anteriores vão se comportar*/
+.infos{
+    float: left; /* as divs serão "puxadas" pra esquerda */
+    width: 33%; /* cada div dentro da div de primeiras informações vai ocupar 1/3 da largura da div*/
+    background-color: rgb(44, 44, 44); /* define a cor de fundo geral das divs dentro da div de primeiras informações */
+    flex: 1; /* faz com que a div ocupe os espaços vagos */
+    border: 1px solid black; /* Adiciona uma borda com 1px de espessura, solida e preta */
+    justify-content: center; /*  Centraliza o texto horizontalmente */
+    align-items: center; /*  Centraliza o texto verticalmente */
+}
+
+/*Define, em algumas divs específicas, a cor de fundo diferente para ficar com impressão de "xadrez"*/
+.xadrez {
+    background-color: rgb(58, 58, 58);
+}
+
+/* Classe que transformará as imagens em imagens redondas*/
+.imgredonda{
+    display: block; /* a imagem vai se adaptar ao zoom da página */
+    margin-left: auto; /* a margem à esquerda vai se ajustar automaticamente */ 
+    margin-right: auto; /* a margem à direita vai se ajustar automaticamente */
+    border-radius: 50%; /* borda de 50% (metade redonda + metade redonda = círculo) */
+    width: 200px; /* largura da imagem será de 200px*/
+    height: 200px; /* altura da imagem será de 200px*/
+    object-fit: cover;/* não deixa a imagem ficar má formatada (esticada por exemplo)*/
+}
+
+/*Classe que define a cor de fundo do body*/
+.corpo {
+    background-color:rgb(31, 30, 30); /* define a tela de fundo */
+}
+
+/* classe criada para definir padrões gerais de textos*/
+.padraotxt{
+    color: white; /*define a cor dos textos */
+    text-align: center; /* os textosd serão alinhados ao centro */
+}
+
+/*classe criada para definir especificadamente como meu nome irá se comportar na parte de cima da página */
+.Mikael {
+    font-size:200%; /*terá o dobro do tamanho original do tipo de texto que ele é */
+    color: white; /*define a cor do texto para branco*/
+    text-align: center; /* os textos serão alinhados ao centro */
+}
+
+/*classe para definir como as datas presentes nas formação irão se comportar */
+.formac{
+    font-size: 15px; /* o tamanho do texto será de 15px*/
+    color: white; /* define a cor do texto para branco*/
+    text-align: center; /* os textos serão alinhados ao centro */
+}
+
+</style>
+
+<body class="corpo">
+    <h1 class="padraotxt"> Currículo </h1>
+    <img class="imgredonda" src="./img/ftmikael.jpg" alt="foto_do_mikael" title="Foto do mikael">
+    <h1 class="Mikael">Mikael Jatobá</H1>
+
+    <div class="informacoes">
+        <div class="firstinform">
+            <div class="infos xadrez">    
+                <h2 class="padraotxt"> Sobre mim: </h2> 
+                <p class="padraotxt"> Olá, sou o Mikael. Tenho <STRONG> 17 anos </STRONG> e estudo no IFAL - Campus Palmeira dos Índios. <br> Curso <strong> informática </strong> e pretendo seguir carreira na área</p> 
+            </div>
+            <div class="infos">  
+                <h2 class="padraotxt"> Experiências: </h2>   
+                <p class="padraotxt"> Tenho experiência com edições de vídeo, Python e ferramentas como Word, Excel, PowerPoint</p>     
+            </div>  
+            <div class="infos xadrez">
+                <h2 class="padraotxt"> Contato </h2> 
+                <p class="padraotxt"> Telefone: (82) 99922-7796 <br> Instagram: mikaell_vinicius_ <br> E-mail: mvaj1@aluno.ifal.edu.br</p>
+            </div>
+        </div>
+        <div class="secondinform">
+            <div class="infos">   
+                <h2 class="padraotxt"> Formação </h2>       
+                    <p class="padraotxt"> Complexo Educacional Agostiniano <br> (Infantil-Fundamenta II)</p> 
+                    <p class="formac">2011-2023</p>
+                    <p class="padraotxt"> IFAL Campus Palmeira dos Índios <br> (Ensino Médio)</p>
+                    <p class="formac"> 2024 - (conclusão prevista para 2026) </p>
+            </div>     
+            <div class="infos xadrez">  
+                <h2 class="padraotxt"> Habilidades </h2>  
+                <p class="padraotxt"> Organização exemplar</p>
+                <p class="padraotxt"> Atividades em grupo</p>
+                <p class="padraotxt"> Boa comunicação</p>
+            </div> 
+            <div class="infos"> 
+                <h2 class="padraotxt"> Idiomas</h2> 
+                <p class="padraotxt"> Espanhol: Intermediário</p>
+                <p class="padraotxt"> Inglês: Iniciante</p> 
+            </div>
+        </div>    
+    </div>                 
+</body>
